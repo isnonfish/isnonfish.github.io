@@ -29,6 +29,31 @@
   
   
   <entry>
+    <title>Linux常用命令</title>
+    <link href="/2020/05/06/linux/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <url>/2020/05/06/linux/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h4 id="1-查看当前程序并强制关闭进程"><a href="#1-查看当前程序并强制关闭进程" class="headerlink" title="1.查看当前程序并强制关闭进程"></a>1.查看当前程序并强制关闭进程</h4><p><code>ps -ef|grep 【程序名】</code></p><p><code>kill -9 【进程号】</code></p><p><code>【netstat  -anp  |grep 6379 】查询端口是否被占用</code></p><p><code>【ps aux】该命令用于查看当前所有运行的进程</code></p><h4 id="2-修改系统是时间"><a href="#2-修改系统是时间" class="headerlink" title="2.修改系统是时间"></a>2.修改系统是时间</h4><p><code>date</code>   查看本地时间</p><p><code>hwclock --show</code>   查看硬件时间</p><p><code>hwclock --set --date &#39;2016-01-08  15:15:15&#39;</code>  设置硬件时间</p><p><code>hwclock --hctosys</code>   设置系统时间与硬件时间同步</p><p><code>clock -w</code>   保存时钟</p><p><code>init 6  (reboot)</code>   重启</p><h4 id="3-切换用户"><a href="#3-切换用户" class="headerlink" title="3.切换用户"></a>3.切换用户</h4><figure class="highlight mipsasm"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs mipsasm">su - <span class="hljs-keyword">oracle</span><br><span class="hljs-keyword"></span><span class="hljs-comment">#查询oracle详细的端口信息</span><br> lsnrctl status <br><br></code></pre></div></td></tr></table></figure><h4 id="4-系统防火墙"><a href="#4-系统防火墙" class="headerlink" title="4.系统防火墙"></a>4.系统防火墙</h4><p><code>systemctl stop firewalld</code>关闭系统防火墙</p><p><code>systemctl status firewalld</code> 查看防火墙状态</p><h4 id="5-解压war包"><a href="#5-解压war包" class="headerlink" title="5.解压war包"></a>5.解压war包</h4><p><code>unzip -oq common.war -d common</code></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>nginx配置SSl证书开启HTTPS访问</title>
     <link href="/2020/05/06/nginx/nginx%E9%85%8D%E7%BD%AESSl%E8%AF%81%E4%B9%A6%E5%BC%80%E5%90%AFHTTPS%E8%AE%BF%E9%97%AE/"/>
     <url>/2020/05/06/nginx/nginx%E9%85%8D%E7%BD%AESSl%E8%AF%81%E4%B9%A6%E5%BC%80%E5%90%AFHTTPS%E8%AE%BF%E9%97%AE/</url>
